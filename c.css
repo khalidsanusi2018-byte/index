@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #2269d3;
+   
+}
+
+.nav{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    background: #101d35;
+    color: white;
+     transform: scale(1.2);
+}
+.nav h3::after{
+    content: "🚴‍♀️";
+}
+.hero p::first-letter
+{
+    font-size: 2.3rem;
+    color: blueviolet;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero{
+    text-align: center;
+    margin: 50px;
+    line-height: 50px;
+}
+
+input::placeholder{
+    color: tomato;
+    animation: colormovetext 10s infinite ;
+    font-weight: 900;
+}
+@keyframes colormovetext {
+   0% {transform : translateX(0);}
+
+   50%{
+    transform: translateX(150px)
+   }
+
+   100%{
+    transform: translateX(0)
+   }
+
+}
+
+
+.fade{
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+.hero button{
+    background-color: tomato;
+    padding: 10px;
+    color: antiquewhite;
+    border-radius: 10px;
+  
+  padding: 15px 30px;
+ transition: background-color 0.5s ease;
+}
+
+.hero button:hover {
+  background-color: red;
+  transform: scale(1.2);
+}
+
+.tracking{
+    background: radial-gradient(white, gray);
+    margin: 20px;
+    line-height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.t-no{
+    min-width: 600px 90%;
+    padding: 10px 7%;
+    border: 1px solid;
+}
+.tracking button{
+      background-color:darkkhaki;
+    padding: 10px;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+
+.ser-head{
+    text-align: center;
+}
+.service-card{
+ display: inline-block;
+    background: rgba(255, 255, 255, 0.493);
+    padding: 30px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px;
+     
+  transform: translate(50px, 30px);
+}
+
+
+
+.service{
+    display: flex;
+    justify-content: center;
+}
